@@ -2,7 +2,7 @@
 (function (d) {
   'use strict'
   const arr = [1, 2, 3, 4, 5, 6, 7, '☕', '🌹', '♥']
-  const shufleCards = getShuffledArr(arr.concat(arr))
+  let shufleCards = getShuffledArr(arr.concat(arr))
   const documentFragment = d.createDocumentFragment()
   const gridContainer = d.getElementsByClassName('grid-container')[0]
   const message = d.getElementsByClassName('message')[0]
@@ -43,6 +43,7 @@
   }
 
   function start () {
+    shufleCards = getShuffledArr(arr.concat(arr))
     shufleCards.forEach(e => {
       const ele = new Element('DIV', 'wrpko', '')
       const kor = new Element('DIV', 'korta', '')
