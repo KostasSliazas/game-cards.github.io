@@ -6,6 +6,7 @@ body {
 body {
     margin: 0;
     background: linear-gradient(0deg, #fffad9, #f0f0f0);
+    color: #777;
 }
 
 .grid-container {
@@ -14,6 +15,7 @@ body {
     gap: .75em;
     margin: .25em auto;
     max-width: 700px;
+    padding: 0 .75em;
 }
 
 .grid-container .wrpko {
@@ -136,7 +138,7 @@ body {
 
 .message p {
     order: 1;
-    padding:0 1em;
+    padding: 0 1em;
 }
 
 .btn {
