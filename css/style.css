@@ -1,0 +1,149 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(0deg, #fffad9, #f0f0f0);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(32px, 1fr));
+    gap: .75em;
+    margin: .25em auto;
+    max-width: 700px;
+}
+
+.grid-container .wrpko {
+    cursor: pointer;
+    width: 100%;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    overscroll-behavior-y: contain;
+    display: block;
+    min-height: 100px;
+    height: 100%;
+    transition: transform .4s .2s linear, opacity 1s 1s linear;
+    transition-delay: 0.2s, 1s;
+    transform: translateX(0) scaleY(1);
+    position: relative;
+    perspective: 200px;
+}
+
+.grid-container .korta {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: transform .3s, opacity .2s;
+    text-align: center;
+    transform-style: preserve-3d;
+}
+
+.grid-container .galas {
+    transform: rotateY(-180deg) scale(1);
+    background: #fff7e4;
+    text-shadow: 1em -1em 0 rgb(119, 119, 119), -1em -1em rgb(119, 119, 119), 1em 1em 0 rgb(119, 119, 119), -1em 1em rgb(119, 119, 119);
+    color: #777;
+}
+
+.grid-container .priekis {
+    background: rgba(0, 0, 0, 0) repeating-linear-gradient(rgb(229, 229, 225) 0px, rgb(229, 229, 225) 2px, rgb(232, 232, 228) 2px, rgb(232, 232, 228) 4px) repeat fixed 0% 0%;
+}
+
+.grid-container .priekis,
+.grid-container .galas {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    pointer-events: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 2px #000;
+    overflow: hidden;
+}
+
+/* .grid-container .korta::after {
+    right: 0;
+    transform: rotate(135deg) scale(.7);
+}
+
+.grid-container .korta::before {
+    left: 0;
+    transform: rotate(-45deg) scale(.7);
+}
+
+.grid-container .korta::after,
+.grid-container .korta::before {
+    content: "";
+    display: block;
+    position: absolute;
+    pointer-events: none;
+    padding: 14px;
+    border-left: 4px solid #eee;
+    border-top: 4px solid #eee;
+    filter: drop-shadow(0 0 1px #000);
+    z-index: 2;
+    top: 50%;
+    cursor: pointer;
+    margin-top: -14px;
+} */
+
+.grid-container .korta.pasukti {
+    transform: rotateY(180deg);
+    pointer-events: none;
+}
+
+.grid-container .korta.pasukti1 {
+    transform: rotateY(-180deg);
+    pointer-events: none;
+}
+
+.grid-container .korta.blur .galas {
+    background: #eee;
+    opacity: .3;
+}
+
+.time {
+    text-align: center
+}
+
+.message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 150px;
+    background: #eee;
+    margin: 0 auto;
+    box-shadow: 0 0 10px #000;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.message p {
+    order: 1;
+    padding:0 1em;
+}
+
+.btn {
+    margin: 1em;
+    cursor: pointer;
+}
+
+.hidden {
+    visibility: hidden
+}
