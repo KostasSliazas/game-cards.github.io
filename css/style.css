@@ -7,14 +7,18 @@ body {
     margin: 0;
     background: linear-gradient(0deg, #fffad9, #f0f0f0);
     color: #777;
+    font: 16px/1.5 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrp {
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(5, minmax(32px, 1fr));
     gap: .75em;
-    margin: .25em auto;
-    max-width: 700px;
     padding: 0 .75em;
 }
 
@@ -48,8 +52,9 @@ body {
 .grid-container .galas {
     transform: rotateY(-180deg) scale(1);
     background: #fff7e4;
-    text-shadow: 1em -1em 0 rgb(119, 119, 119), -1em -1em rgb(119, 119, 119), 1em 1em 0 rgb(119, 119, 119), -1em 1em rgb(119, 119, 119);
-    color: #777;
+    text-shadow: 1em -1em 0 #777, -1em -1em #777, 1em 1em 0 #777, -1em 1em #777;
+    color: #555;
+    font-weight: 700;
 }
 
 .grid-container .priekis {
@@ -74,30 +79,36 @@ body {
     overflow: hidden;
 }
 
-/* .grid-container .korta::after {
+/* .grid-container .wrpko::after {
     right: 0;
     transform: rotate(135deg) scale(.7);
 }
 
-.grid-container .korta::before {
+.grid-container .wrpko::before {
     left: 0;
     transform: rotate(-45deg) scale(.7);
 }
 
-.grid-container .korta::after,
-.grid-container .korta::before {
+.grid-container .wrpko::after,
+.grid-container .wrpko::before {
     content: "";
     display: block;
     position: absolute;
     pointer-events: none;
-    padding: 14px;
+    padding: 8px;
     border-left: 4px solid #eee;
     border-top: 4px solid #eee;
     filter: drop-shadow(0 0 1px #000);
     z-index: 2;
     top: 50%;
     cursor: pointer;
-    margin-top: -14px;
+    margin-top: -8px;
+    visibility: hidden;
+}
+
+.grid-container .wrpko:hover::after,
+.grid-container .wrpko:hover::before {
+    visibility: visible;
 } */
 
 .grid-container .korta.pasukti {
@@ -116,7 +127,8 @@ body {
 }
 
 .time {
-    text-align: center
+    text-align: center;
+    font-size: .75em;
 }
 
 .message {
@@ -125,7 +137,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     min-height: 150px;
-    background: #eee;
+    background: #fafafa;
     margin: 0 auto;
     box-shadow: 0 0 10px #000;
     text-align: center;
@@ -134,6 +146,7 @@ body {
     border-radius: 10px;
     width: 100%;
     max-width: 300px;
+    border: 10px solid #eee;
 }
 
 .message p {
@@ -142,8 +155,31 @@ body {
 }
 
 .btn {
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    background: linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    border: 1px solid #dcdcdc;
+    display: inline-block;
+    color: #777;
+    font-family: Arial;
+    font-weight: bold;
     margin: 1em;
     cursor: pointer;
+    font-size: 24px;
+    padding: .25em;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffffff;
+}
+
+.btn:hover {
+    background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+    background-color: #e9e9e9;
+}
+
+.btn:active {
+    position: relative;
+    top: 1px;
 }
 
 .hidden {

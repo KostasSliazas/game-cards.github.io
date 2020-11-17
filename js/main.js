@@ -67,13 +67,13 @@
       const randomClass = Math.round(Math.random()) >= 0.5 ? 'pasukti' : 'pasukti1'
       target.className += ' ' + randomClass
       if (card.cards === 2) {
+        gridContainer.style.pointerEvents = 'none'
         if (card.card.firstChild.innerHTML === target.firstChild.innerHTML) {
           let inter0 = setTimeout(() => {
             target.classList.add('blur')
             card.card.classList.add('blur')
-            clearTimeout(inter0)
-            inter0 = 0
             card.cards = 0
+            gridContainer.style.pointerEvents = 'auto'
             if (gridContainer.getElementsByClassName('blur').length === shufleCards.length) {
               clearInterval(on)
               message.innerHTML = `<p>YOU WON!</p><p>your time: ${timers.textContent}</p>`
@@ -81,12 +81,15 @@
               button('Play again')
               message.style.display = 'block'
             }
+            clearTimeout(inter0)
+            inter0 = 0
           }, 1000)
         } else {
           let inter = setTimeout(() => {
             target.classList.remove(randomClass)
             card.card.className = 'korta'
             card.cards = 0
+            gridContainer.style.pointerEvents = 'auto'
             clearTimeout(inter)
             inter = 0
           }, 1000)
