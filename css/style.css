@@ -161,6 +161,7 @@ body {
 
 h1 {
     text-align: center;
+    color: #fff;
     margin: 0;
     text-shadow: 1px -1px 0px rgba(15, 125, 34, 1), 2px -2px 0px rgba(157, 87, 47, 0.9), 3px -3px 0px rgba(78, 182, 22, 0.8), 4px -4px 0px rgba(164, 162, 97, 0.7), 5px -5px 0px rgba(4, 224, 0, 0.6), 6px -6px 0px rgba(51, 171, 115, 0.5), 7px -7px 0px rgba(177, 81, 187, 0.4);
 }
