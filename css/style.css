@@ -17,10 +17,10 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(5, minmax(4em, 1fr));
+    grid-template-columns: repeat(5, minmax(14vh, 1fr));
     gap: .625em;
     padding: 0 .625em;
-    grid-template-rows: repeat(4, minmax(5em, 2fr));
+    grid-template-rows: repeat(4, minmax(18vh, 2fr));
     justify-items: center
 }
 
@@ -42,7 +42,6 @@ body {
     transition-delay: .2s, 1s;
     transform: translateX(0) scaleY(1);
     perspective: 200px;
-    /*! max-width: 4em; */
 }
 
 .grid-container .korta {
@@ -169,9 +168,5 @@ h1 {
 @media only screen and (max-width:600px) {
     body {
         font-size: 12px;
-    }
-
-    .grid-container {
-        grid-template-columns: repeat(5, minmax(3em, 1fr));
     }
 }
