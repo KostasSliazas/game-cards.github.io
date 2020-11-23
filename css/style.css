@@ -12,7 +12,7 @@ body {
 
 .wrp {
     margin: 0 auto;
-    height: 100%;
+    height: 100vh;
 }
 
 .grid-container {
@@ -22,7 +22,6 @@ body {
     padding: 0 .625em;
     grid-template-rows: repeat(4, minmax(5em, 1fr));
     justify-items: center;
-    height: calc(100% - 100px);
 }
 
 .grid-container .korta,
@@ -57,7 +56,7 @@ body {
     text-shadow: 1em -2em 0 #777, -1em -2em #777, 1em 2em 0 #777, -1em 2em #777;
     color: #555;
     font-weight: 700;
-    font-size: .75em;
+    font-size: .625em;
 }
 
 .grid-container .priekis {
@@ -171,6 +170,7 @@ h1 {
 @media only screen and (min-width:600px) {
     .wrp {
         max-width: max-content;
+        max-height: max-content;
     }
 
     .grid-container .galas {
@@ -179,4 +179,8 @@ h1 {
 
     .grid-container .wrpko {
         min-width: 5em;
+        max-width: 5em;
+        min-height: 7em;
+        max-height: 7em;
     }
+}
