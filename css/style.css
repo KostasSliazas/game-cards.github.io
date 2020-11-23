@@ -1,68 +1,70 @@
-html,
-body {
-    height: 100%;
+body,
+html {
+    height: 100%
 }
 
 body {
     margin: 0;
-    background: linear-gradient(0deg, #fffad9, #f0f0f0);
+    background: linear-gradient(0deg, #f0efbe, #f0f0f0);
     color: #777;
-    font: 16px/1.5 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font: 16px/1.5 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 .wrp {
-    max-width: 700px;
-    margin: 0 auto;
+    max-width: max-content;
+    margin: 0 auto
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(5, minmax(32px, 1fr));
-    gap: .75em;
-    padding: 0 .75em;
+    grid-template-columns: repeat(5, minmax(4em, 1fr));
+    gap: .625em;
+    padding: 0 .625em;
+    grid-template-rows: repeat(4, minmax(5em, 2fr));
+    justify-items: center
+}
+
+.grid-container .korta,
+.grid-container .wrpko {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%
 }
 
 .grid-container .wrpko {
     cursor: pointer;
-    width: 100%;
     -moz-user-select: none;
     -webkit-user-select: none;
     -webkit-tap-highlight-color: transparent;
     overscroll-behavior-y: contain;
-    display: block;
-    min-height: 100px;
-    height: 100%;
     transition: transform .4s .2s linear, opacity 1s 1s linear;
-    transition-delay: 0.2s, 1s;
+    transition-delay: .2s, 1s;
     transform: translateX(0) scaleY(1);
-    position: relative;
     perspective: 200px;
+    /*! max-width: 4em; */
 }
 
 .grid-container .korta {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
     transition: transform .3s, opacity .2s;
     text-align: center;
-    transform-style: preserve-3d;
+    transform-style: preserve-3d
 }
 
 .grid-container .galas {
     transform: rotateY(-180deg) scale(1);
     background: #fff7e4;
-    text-shadow: 1em -1em 0 #777, -1em -1em #777, 1em 1em 0 #777, -1em 1em #777;
+    text-shadow: 1em -2em 0 #777, -1em -2em #777, 1em 2em 0 #777, -1em 2em #777;
     color: #555;
-    font-weight: 700;
+    font-weight: 700
 }
 
 .grid-container .priekis {
-    background: rgba(0, 0, 0, 0) repeating-linear-gradient(rgb(229, 229, 225) 0px, rgb(229, 229, 225) 2px, rgb(232, 232, 228) 2px, rgb(232, 232, 228) 4px) repeat fixed 0% 0%;
+    background: repeating-linear-gradient(#e5e5e1 0, #e5e5e1 2px, #e8e8e4 2px, #e8e8e4 4px) fixed 0 0
 }
 
-.grid-container .priekis,
-.grid-container .galas {
+.grid-container .galas,
+.grid-container .priekis {
     display: flex;
     width: 100%;
     height: 100%;
@@ -70,92 +72,63 @@ body {
     pointer-events: none;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
+    font-size: 14px;
     position: absolute;
     top: 0;
     left: 0;
     border-radius: 10px;
     box-shadow: 0 0 2px #000;
-    overflow: hidden;
+    overflow: hidden
 }
-
-/* .grid-container .wrpko::after {
-    right: 0;
-    transform: rotate(135deg) scale(.7);
-}
-
-.grid-container .wrpko::before {
-    left: 0;
-    transform: rotate(-45deg) scale(.7);
-}
-
-.grid-container .wrpko::after,
-.grid-container .wrpko::before {
-    content: "";
-    display: block;
-    position: absolute;
-    pointer-events: none;
-    padding: 8px;
-    border-left: 4px solid #eee;
-    border-top: 4px solid #eee;
-    filter: drop-shadow(0 0 1px #000);
-    z-index: 2;
-    top: 50%;
-    cursor: pointer;
-    margin-top: -8px;
-    visibility: hidden;
-}
-
-.grid-container .wrpko:hover::after,
-.grid-container .wrpko:hover::before {
-    visibility: visible;
-} */
 
 .grid-container .korta.pasukti {
     transform: rotateY(180deg);
-    pointer-events: none;
+    pointer-events: none
 }
 
 .grid-container .korta.pasukti1 {
     transform: rotateY(-180deg);
-    pointer-events: none;
+    pointer-events: none
 }
 
 .grid-container .korta.blur .galas {
     background: #eee;
-    opacity: .3;
+    opacity: .3
+}
+
+.message,
+.time {
+    text-align: center
 }
 
 .time {
-    text-align: center;
-    font-size: .75em;
+    font-size: .75em
 }
 
 .message {
     position: fixed;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     min-height: 150px;
     background: #fafafa;
     margin: 0 auto;
     box-shadow: 0 0 10px #000;
-    text-align: center;
     display: flex;
     flex-direction: column-reverse;
     border-radius: 10px;
     width: 100%;
     max-width: 300px;
-    border: 10px solid #eee;
+    border: 10px solid #eee
 }
 
 .message p {
     order: 1;
-    padding: 0 1em;
+    padding: 0 1em
 }
 
 .btn {
-    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    box-shadow: inset 0 1px 0 0 #fff;
     background: linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
     background-color: #f9f9f9;
     border-radius: 6px;
@@ -163,25 +136,35 @@ body {
     display: inline-block;
     color: #777;
     font-family: Arial;
-    font-weight: bold;
+    font-weight: 700;
     margin: 1em;
     cursor: pointer;
     font-size: 24px;
     padding: .25em;
     text-decoration: none;
-    text-shadow: 0px 1px 0px #ffffff;
+    text-shadow: 0 1px 0 #fff
 }
 
 .btn:hover {
     background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
-    background-color: #e9e9e9;
+    background-color: #e9e9e9
 }
 
 .btn:active {
     position: relative;
-    top: 1px;
+    top: 1px
 }
 
 .hidden {
     visibility: hidden
+}
+
+@media only screen and (max-width:600px) {
+    body {
+        font-size: 12px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(5, minmax(3em, 1fr));
+    }
 }
