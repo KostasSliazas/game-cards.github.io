@@ -42,6 +42,7 @@ body {
     transition-delay: .2s, 1s;
     transform: translateX(0) scaleY(1);
     perspective: 200px;
+    color: #f88;
 }
 
 .grid-container .korta {
@@ -78,7 +79,8 @@ body {
     left: 0;
     border-radius: 10px;
     box-shadow: 0 0 2px #000;
-    overflow: hidden
+    overflow: hidden;
+    color: #5e79b7;
 }
 
 .grid-container .korta.pasukti {
@@ -164,7 +166,7 @@ h1 {
     color: #fff;
     margin: 0;
     font-size: 1em;
-    text-shadow: 1px -1px 0px rgba(15, 125, 34, 1), 2px -2px 0px rgba(157, 87, 47, 0.9), 3px -3px 0px rgba(78, 182, 22, 0.8), 4px -4px 0px rgba(164, 162, 97, 0.7), 5px -5px 0px rgba(4, 224, 0, 0.6), 6px -6px 0px rgba(51, 171, 115, 0.5), 7px -7px 0px rgba(177, 81, 187, 0.4);
+    text-shadow: rgb(163, 198, 132) -1px -1px 0px, rgba(107, 245, 118, 0.9) -2px -2px 0px, rgba(107, 200, 251, 0.8) -3px -3px 0px, rgba(93, 90, 121, 0.7) -4px -4px 0px;
 }
 
 @media only screen and (min-width:600px) {
