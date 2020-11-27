@@ -1,7 +1,7 @@
 ;
 (function (d) {
   'use strict'
-  const arr = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'j', 'k', 'l']
+  const arr = ['l', 's', 't', 'd', 'e', 'f', 'g', 'j', 't', 'v']
   let shufleCards = getShuffledArr(arr.concat(arr))
   const documentFragment = d.createDocumentFragment()
   const gridContainer = d.getElementsByClassName('grid-container')[0]
@@ -49,7 +49,7 @@
     shufleCards.forEach(e => {
       const ele = new Element('DIV', 'wrpko', '')
       const kor = new Element('DIV', 'korta', '')
-      const gal = new Element('DIV', 'galas' + ' icon icon-' + e, e)
+      const gal = new Element('DIV', 'galas' + ' icon icon-' + e, '')
       const pri = new Element('DIV', 'priekis', '')
       ele.appendChild(kor)
       kor.appendChild(gal)
@@ -70,7 +70,7 @@
       target.className += ' ' + randomClass
       if (card.cards === 2) {
         gridContainer.style.pointerEvents = 'none'
-        if (card.card.firstChild.innerHTML === target.firstChild.innerHTML) {
+        if (card.card.firstChild.className === target.firstChild.className) {
           let inter0 = setTimeout(() => {
             target.classList.add('blur')
             card.card.classList.add('blur')
