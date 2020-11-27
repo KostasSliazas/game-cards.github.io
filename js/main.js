@@ -1,7 +1,7 @@
 ;
 (function (d) {
   'use strict'
-  const arr = [1, 2, 3, 4, 5, 6, 7, '☕', '🌹', '♥']
+  const arr = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'j', 'k', 'l']
   let shufleCards = getShuffledArr(arr.concat(arr))
   const documentFragment = d.createDocumentFragment()
   const gridContainer = d.getElementsByClassName('grid-container')[0]
@@ -31,8 +31,10 @@
     return this.elem
   }
   let on = 0
+
   function timer () {
     let sec = 0
+
     function pad (val) {
       return val > 9 ? val : '0' + val
     }
@@ -47,7 +49,7 @@
     shufleCards.forEach(e => {
       const ele = new Element('DIV', 'wrpko', '')
       const kor = new Element('DIV', 'korta', '')
-      const gal = new Element('DIV', 'galas', e)
+      const gal = new Element('DIV', 'galas' + ' icon icon-' + e, e)
       const pri = new Element('DIV', 'priekis', '')
       ele.appendChild(kor)
       kor.appendChild(gal)
