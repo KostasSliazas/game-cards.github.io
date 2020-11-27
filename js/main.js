@@ -1,7 +1,7 @@
 ;
 (function (d) {
   'use strict'
-  const arr = ['l', 's', 't', 'd', 'e', 'f', 'g', 'j', 't', 'v']
+  const arr = ['l', 's', 't', 'd', 'e', 'f', 'g', 'j', 'z', 'v']
   let shufleCards = getShuffledArr(arr.concat(arr))
   const documentFragment = d.createDocumentFragment()
   const gridContainer = d.getElementsByClassName('grid-container')[0]
