@@ -21,7 +21,7 @@
     return newArr
   };
 
-  function Element (tagName, className, text) {
+  function Element (tagName, className, text = '') {
     this.tagName = tagName
     this.text = text
     this.className = className
@@ -47,10 +47,10 @@
   function start () {
     shufleCards = getShuffledArr(arr.concat(arr))
     shufleCards.forEach(e => {
-      const ele = new Element('DIV', 'wrpko', '')
-      const kor = new Element('DIV', 'korta', '')
-      const gal = new Element('DIV', 'galas' + ' icon icon-' + e, '')
-      const pri = new Element('DIV', 'priekis', '')
+      const ele = new Element('DIV', 'wrpko')
+      const kor = new Element('DIV', 'korta')
+      const gal = new Element('DIV', 'galas' + ' icon icon-' + e)
+      const pri = new Element('DIV', 'priekis')
       ele.appendChild(kor)
       kor.appendChild(gal)
       kor.appendChild(pri)
