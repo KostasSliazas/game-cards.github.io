@@ -1,25 +1,22 @@
-html,
-body {
-    height: 100%;
+html{
+    height:100%;
+    background: linear-gradient(0deg, #f0efbe, #f0f0f0) fixed;
 }
-
 body {
     margin: 0;
-    background: linear-gradient(0deg, #f0efbe, #f0f0f0);
     color: #777;
     font: 16px/1.5 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 .wrp {
     margin: 0 auto;
-    height: 100vh;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(5, minmax(3em, 1fr));
     gap: .625em;
-    padding: 0 .625em;
+    padding: .625em;
     grid-template-rows: repeat(4, minmax(5em, 1fr));
     justify-items: center;
 }
@@ -42,7 +39,6 @@ body {
     transition-delay: .2s, 1s;
     transform: translateX(0) scaleY(1);
     perspective: 200px;
-    color: #f88;
 }
 
 .grid-container .korta {
@@ -54,10 +50,11 @@ body {
 .grid-container .galas {
     transform: rotateY(-180deg) scale(1);
     background: #fff7e4;
-    text-shadow: 1em -2em 0 #777, -1em -2em #777, 1em 2em 0 #777, -1em 2em #777;
+    text-shadow: 1em -2em 0 currentColor, -1em -2em currentColor, 1em 2em 0 currentColor, -1em 2em currentColor;
     color: #555;
     font-weight: 700;
     font-size: .625em;
+    color: #61447c;
 }
 
 .grid-container .priekis {
@@ -80,7 +77,6 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 2px #000;
     overflow: hidden;
-    color: #5e79b7;
 }
 
 .grid-container .korta.pasukti {
