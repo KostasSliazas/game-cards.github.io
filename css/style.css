@@ -33,6 +33,7 @@ body {
     cursor: pointer;
     -moz-user-select: none;
     -webkit-user-select: none;
+    user-select: none;
     -webkit-tap-highlight-color: transparent;
     overscroll-behavior-y: contain;
     transition: transform .4s .2s linear, opacity 1s 1s linear;
@@ -178,5 +179,10 @@ h1 {
     .grid-container .wrpko {
         min-width: 5em;
         min-height: 7em;
+    }
+}
+@media screen and (orientation:landscape) {
+    .grid-container {
+        grid-template-columns: repeat(10, minmax(3em, 1fr));
     }
 }
