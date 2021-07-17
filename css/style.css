@@ -4,7 +4,7 @@ body {
 }
 
 html {
-    background: linear-gradient(0deg, #f0efbe, #f0f0f0) fixed;
+    background: #bbb;
 }
 
 body {
@@ -173,7 +173,7 @@ h1 {
     color: #fff;
     margin: 0;
     font-size: 1em;
-    text-shadow: rgb(163, 198, 132) -1px -1px 0px, rgba(107, 245, 118, 0.9) -2px -2px 0px, rgba(107, 200, 251, 0.8) -3px -3px 0px, rgba(93, 90, 121, 0.7) -4px -4px 0px;
+    text-shadow: rgb(152, 152, 152) -1px -1px 0px, rgb(152, 152, 152) -2px -2px 0px, rgb(152, 152, 152) -3px -3px 0px, rgb(152, 152, 152) -4px -4px 0px, rgb(152, 152, 152) -5px -5px 0px, rgb(152, 152, 152) -6px -6px 0px, rgb(152, 152, 152) -7px -7px 0px, rgb(152, 152, 152) -8px -8px 0px, rgb(152, 152, 152) -9px -9px 0px, rgb(152, 152, 152) -10px -10px 0px, rgb(152, 152, 152) -11px -11px 0px, rgb(152, 152, 152) -12px -12px 0px, rgb(152, 152, 152) -13px -13px 0px, rgb(152, 152, 152) -14px -14px 0px, rgb(152, 152, 152) -15px -15px 0px, rgb(152, 152, 152) -16px -16px 0px, rgb(152, 152, 152) -17px -17px 0px, rgb(152, 152, 152) -18px -18px 0px, rgb(152, 152, 152) -19px -19px 0px, rgb(152, 152, 152) -20px -20px 0px, rgb(152, 152, 152) -21px -21px 0px, rgb(152, 152, 152) -22px -22px 0px, rgb(152, 152, 152) -23px -23px 0px, rgb(152, 152, 152) -24px -24px 0px, rgb(152, 152, 152) -25px -25px 0px, rgb(152, 152, 152) -26px -26px 0px, rgb(152, 152, 152) -27px -27px 0px, rgb(152, 152, 152) -28px -28px 0px, rgb(152, 152, 152) -29px -29px 0px, rgb(152, 152, 152) -30px -30px 0px, rgb(152, 152, 152) -31px -31px 0px, rgb(152, 152, 152) -32px -32px 0px, rgb(152, 152, 152) -33px -33px 0px, rgb(152, 152, 152) -34px -34px 0px, rgb(152, 152, 152) -35px -35px 0px, rgb(152, 152, 152) -36px -36px 0px, rgb(152, 152, 152) -37px -37px 0px, rgba(152, 152, 152, 0.9) -38px -38px 0px, rgba(152, 152, 152, 0.8) -39px -39px 0px, rgba(152, 152, 152, 0.7) -40px -40px 0px, rgba(152, 152, 152, 0.6) -41px -41px 0px, rgba(152, 152, 152, 0.5) -42px -42px 0px, rgba(152, 152, 152, 0.4) -43px -43px 0px, rgba(152, 152, 152, 0.3) -44px -44px 0px, rgba(152, 152, 152, 0.2) -45px -45px 0px;
 }
 
 @media only screen and (max-width:600px) {
