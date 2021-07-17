@@ -45,18 +45,18 @@ body {
     overscroll-behavior-y: contain;
     transition: transform .4s .2s linear, opacity 1s 1s linear;
     transition-delay: .2s, 1s;
-    transform: translateX(0) scaleY(1);
     perspective: 200px;
+    transform: translate3d(0, 0, 0);
 }
 
 .grid-container .korta {
-    transition: transform .3s, opacity .2s;
+    transition: transform .3s;
     text-align: center;
     transform-style: preserve-3d
 }
 
 .grid-container .galas {
-    transform: rotateY(-180deg) scale(1);
+    transform: rotate3d(0, -180deg, 0) scale(1);
     background: #fff7e4;
     text-shadow: 1em -2em 0 currentColor, -1em -2em currentColor, 1em 2em 0 currentColor, -1em 2em currentColor;
     color: #555;
