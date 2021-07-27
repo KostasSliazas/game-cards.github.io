@@ -1,10 +1,11 @@
-html,
-body {
-    height: 100%;
+.wrp,
+body,
+html {
+    height: 100%
 }
 
 html {
-    background: #bbb;
+    background: #bbb
 }
 
 body {
@@ -16,8 +17,7 @@ body {
 .wrp {
     margin: 0 auto;
     padding: .625em;
-    height: 100%;
-    max-width: 600px;
+    max-width: 600px
 }
 
 .grid-container {
@@ -27,18 +27,17 @@ body {
     grid-template-rows: repeat(4, minmax(1em, 1fr));
     justify-items: center;
     height: calc(100% - 72px);
-    width: 100%;
+    width: 100%
 }
 
 .grid-container .korta,
 .grid-container .wrpko {
     width: 100%;
-    height: 100%;
+    height: 100%
 }
 
 .grid-container .korta {
-    background: #fafafa;
-    border-radius: 10px;
+    border-radius: 10px
 }
 
 .grid-container .wrpko {
@@ -51,7 +50,7 @@ body {
     transition: transform .4s .2s linear, opacity 1s 1s linear;
     transition-delay: .2s, 1s;
     perspective: 200px;
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
 }
 
 .grid-container .korta {
@@ -61,10 +60,9 @@ body {
 }
 
 .grid-container .galas {
-    transform: rotate3d(0, -180deg, 0) scale(1);
+    transform: rotateY(180deg);
     background: #fff7e4;
     text-shadow: 1em -2em 0 currentColor, -1em -2em currentColor, 1em 2em 0 currentColor, -1em 2em currentColor;
-    font-weight: 700;
     color: #61447c;
 }
 
@@ -86,8 +84,7 @@ body {
     top: 0;
     left: 0;
     box-shadow: 0 0 2px #777;
-    overflow: hidden;
-    border-radius: 10px;
+    border-radius: 10px
 }
 
 .grid-container .korta.pasukti {
@@ -106,7 +103,8 @@ body {
 }
 
 .message,
-.time {
+.time,
+h1 {
     text-align: center
 }
 
@@ -169,23 +167,16 @@ body {
 }
 
 h1 {
-    text-align: center;
     color: #fff;
     margin: 0;
     font-size: 1em;
-    text-shadow: rgb(152, 152, 152) -1px -1px 0px, rgb(152, 152, 152) -2px -2px 0px, rgb(152, 152, 152) -3px -3px 0px, rgb(152, 152, 152) -4px -4px 0px, rgb(152, 152, 152) -5px -5px 0px, rgb(152, 152, 152) -6px -6px 0px, rgb(152, 152, 152) -7px -7px 0px, rgb(152, 152, 152) -8px -8px 0px, rgb(152, 152, 152) -9px -9px 0px, rgb(152, 152, 152) -10px -10px 0px, rgb(152, 152, 152) -11px -11px 0px, rgb(152, 152, 152) -12px -12px 0px, rgb(152, 152, 152) -13px -13px 0px, rgb(152, 152, 152) -14px -14px 0px, rgb(152, 152, 152) -15px -15px 0px, rgb(152, 152, 152) -16px -16px 0px, rgb(152, 152, 152) -17px -17px 0px, rgb(152, 152, 152) -18px -18px 0px, rgb(152, 152, 152) -19px -19px 0px, rgb(152, 152, 152) -20px -20px 0px, rgb(152, 152, 152) -21px -21px 0px, rgb(152, 152, 152) -22px -22px 0px, rgb(152, 152, 152) -23px -23px 0px, rgb(152, 152, 152) -24px -24px 0px, rgb(152, 152, 152) -25px -25px 0px, rgb(152, 152, 152) -26px -26px 0px, rgb(152, 152, 152) -27px -27px 0px, rgb(152, 152, 152) -28px -28px 0px, rgb(152, 152, 152) -29px -29px 0px, rgb(152, 152, 152) -30px -30px 0px, rgb(152, 152, 152) -31px -31px 0px, rgb(152, 152, 152) -32px -32px 0px, rgb(152, 152, 152) -33px -33px 0px, rgb(152, 152, 152) -34px -34px 0px, rgb(152, 152, 152) -35px -35px 0px, rgb(152, 152, 152) -36px -36px 0px, rgb(152, 152, 152) -37px -37px 0px, rgba(152, 152, 152, 0.9) -38px -38px 0px, rgba(152, 152, 152, 0.8) -39px -39px 0px, rgba(152, 152, 152, 0.7) -40px -40px 0px, rgba(152, 152, 152, 0.6) -41px -41px 0px, rgba(152, 152, 152, 0.5) -42px -42px 0px, rgba(152, 152, 152, 0.4) -43px -43px 0px, rgba(152, 152, 152, 0.3) -44px -44px 0px, rgba(152, 152, 152, 0.2) -45px -45px 0px;
+    text-shadow: #989898 -1px -1px 0, #989898 -2px -2px 0, #989898 -3px -3px 0, #989898 -4px -4px 0, #989898 -5px -5px 0, #989898 -6px -6px 0, #989898 -7px -7px 0, #989898 -8px -8px 0, #989898 -9px -9px 0, #989898 -10px -10px 0, #989898 -11px -11px 0, #989898 -12px -12px 0, #989898 -13px -13px 0, #989898 -14px -14px 0, #989898 -15px -15px 0, #989898 -16px -16px 0, #989898 -17px -17px 0, #989898 -18px -18px 0, #989898 -19px -19px 0, #989898 -20px -20px 0, #989898 -21px -21px 0, #989898 -22px -22px 0, #989898 -23px -23px 0, #989898 -24px -24px 0, #989898 -25px -25px 0, #989898 -26px -26px 0, #989898 -27px -27px 0, #989898 -28px -28px 0, #989898 -29px -29px 0, #989898 -30px -30px 0, #989898 -31px -31px 0, #989898 -32px -32px 0, #989898 -33px -33px 0, #989898 -34px -34px 0, #989898 -35px -35px 0, #989898 -36px -36px 0, #989898 -37px -37px 0, rgba(152, 152, 152, .9) -38px -38px 0, rgba(152, 152, 152, .8) -39px -39px 0, rgba(152, 152, 152, .7) -40px -40px 0, rgba(152, 152, 152, .6) -41px -41px 0, rgba(152, 152, 152, .5) -42px -42px 0, rgba(152, 152, 152, .4) -43px -43px 0, rgba(152, 152, 152, .3) -44px -44px 0, rgba(152, 152, 152, .2) -45px -45px 0
 }
 
 @media only screen and (max-width:600px) {
 
     .grid-container .galas,
     .grid-container .priekis {
-        font-size: .75em;
+        font-size: .75em
     }
 }
-
-/* @media screen and (orientation:landscape) {
-    .grid-container {
-        grid-template-columns: repeat(10, minmax(3em, 1fr));
-    }
-} */
