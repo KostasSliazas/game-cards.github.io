@@ -5,12 +5,12 @@ html {
 }
 
 html {
-    background: #bbb
+    background: #f7f7ff
 }
 
 body {
     margin: 0;
-    color: #777;
+    color: #6a6a88;
     font: 16px/1.5 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
@@ -61,9 +61,9 @@ body {
 
 .grid-container .galas {
     transform: rotateY(180deg);
-    background: #fff7e4;
+    background: #fafafa;
     text-shadow: 1em -2em 0 currentColor, -1em -2em currentColor, 1em 2em 0 currentColor, -1em 2em currentColor;
-    color: #61447c;
+    color: #303074;
 }
 
 .grid-container .priekis {
@@ -83,7 +83,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    box-shadow: 0 0 2px #777;
+    box-shadow: 0 0 2px #303074;
     border-radius: 10px
 }
 
@@ -167,10 +167,8 @@ h1 {
 }
 
 h1 {
-    color: #fff;
     margin: 0;
     font-size: 1em;
-    text-shadow: #989898 -1px -1px 0, #989898 -2px -2px 0, #989898 -3px -3px 0, #989898 -4px -4px 0, #989898 -5px -5px 0, #989898 -6px -6px 0, #989898 -7px -7px 0, #989898 -8px -8px 0, #989898 -9px -9px 0, #989898 -10px -10px 0, #989898 -11px -11px 0, #989898 -12px -12px 0, #989898 -13px -13px 0, #989898 -14px -14px 0, #989898 -15px -15px 0, #989898 -16px -16px 0, #989898 -17px -17px 0, #989898 -18px -18px 0, #989898 -19px -19px 0, #989898 -20px -20px 0, #989898 -21px -21px 0, #989898 -22px -22px 0, #989898 -23px -23px 0, #989898 -24px -24px 0, #989898 -25px -25px 0, #989898 -26px -26px 0, #989898 -27px -27px 0, #989898 -28px -28px 0, #989898 -29px -29px 0, #989898 -30px -30px 0, #989898 -31px -31px 0, #989898 -32px -32px 0, #989898 -33px -33px 0, #989898 -34px -34px 0, #989898 -35px -35px 0, #989898 -36px -36px 0, #989898 -37px -37px 0, rgba(152, 152, 152, .9) -38px -38px 0, rgba(152, 152, 152, .8) -39px -39px 0, rgba(152, 152, 152, .7) -40px -40px 0, rgba(152, 152, 152, .6) -41px -41px 0, rgba(152, 152, 152, .5) -42px -42px 0, rgba(152, 152, 152, .4) -43px -43px 0, rgba(152, 152, 152, .3) -44px -44px 0, rgba(152, 152, 152, .2) -45px -45px 0
 }
 
 @media only screen and (max-width:600px) {
