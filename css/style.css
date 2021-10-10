@@ -56,7 +56,6 @@ body {
 .grid-container .korta {
     transition: transform .3s;
     text-align: center;
-    will-change: transform;
     transform-style: preserve-3d
 }
 
@@ -91,11 +90,13 @@ body {
 
 .grid-container .korta.pasukti {
     transform: rotateY(180deg);
+    will-change: transform;
     pointer-events: none
 }
 
 .grid-container .korta.pasukti1 {
     transform: rotateY(-180deg);
+    will-change: transform;
     pointer-events: none
 }
 
