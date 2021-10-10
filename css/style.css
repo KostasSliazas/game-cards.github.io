@@ -83,7 +83,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    border: 1px solid#303074;
+    box-shadow: 0 0 2px #303074;
     border-radius: 10px;
     overflow: hidden;
 }
