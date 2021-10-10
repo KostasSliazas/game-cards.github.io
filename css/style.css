@@ -83,20 +83,18 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    box-shadow: 0 0 2px #303074;
+    border: 1px solid#303074;
     border-radius: 10px;
     overflow: hidden;
 }
 
 .grid-container .korta.pasukti {
     transform: rotateY(180deg);
-    will-change: transform;
     pointer-events: none
 }
 
 .grid-container .korta.pasukti1 {
     transform: rotateY(-180deg);
-    will-change: transform;
     pointer-events: none
 }
 
