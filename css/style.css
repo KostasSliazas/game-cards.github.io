@@ -54,7 +54,7 @@ body {
 }
 
 .grid-container .korta {
-    transition: transform .3s;
+    transition: transform .2s linear;
     text-align: center;
     transform-style: preserve-3d
 }
