@@ -72,6 +72,8 @@
         gridContainer.style.pointerEvents = 'none'
         if (card.card.firstChild.className === target.firstChild.className) {
           let inter0 = setTimeout(() => {
+            clearTimeout(inter0)
+            inter0 = 0
             target.classList.add('blur')
             card.card.classList.add('blur')
             card.cards = 0
@@ -83,18 +85,16 @@
               button('Play again')
               message.style.display = 'block'
             }
-            clearTimeout(inter0)
-            inter0 = 0
-          }, 1000)
+          }, 300)
         } else {
           let inter = setTimeout(() => {
+            clearTimeout(inter)
+            inter = 0
             target.classList.remove(randomClass)
             card.card.className = 'korta'
             card.cards = 0
             gridContainer.style.pointerEvents = 'auto'
-            clearTimeout(inter)
-            inter = 0
-          }, 1000)
+          }, 300)
         }
       }
     }
