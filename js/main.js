@@ -94,7 +94,7 @@
             card.card.className = 'korta'
             card.cards = 0
             gridContainer.style.pointerEvents = 'auto'
-          }, 300)
+          }, 600)
         }
       }
     }
