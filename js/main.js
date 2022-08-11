@@ -20,15 +20,15 @@
     }
     return newArr
   };
-
-  function Element (tagName, className, text = '') {
-    this.tagName = tagName
-    this.text = text
-    this.className = className
-    this.elem = d.createElement(this.tagName)
-    this.elem.className = this.className
-    this.elem.innerHTML = this.text
-    return this.elem
+  /**
+ * @constructor Elements
+ */
+  function Elements (tagName, className, text) {
+    let that = this
+    that = d.createElement(tagName)
+    that.className = className
+    that.innerHTML = text
+    return that
   }
   let on = 0
 
@@ -43,16 +43,20 @@
       d.getElementById('minutes').innerHTML = pad(parseInt(sec / 60, 10))
     }, 1000)
   }
-
+  /**
+ * ...
+ * Good; suppresses within the entire function.
+ * Also, this suppresses multiple warnings.
+ * @suppress {missingProperties|checkTypes}
+ */
   function start () {
     shufleCards = getShuffledArr(arr.concat(arr))
     shufleCards.forEach(e => {
-      const ele = new Element('DIV', 'wrpko')
-      const kor = new Element('DIV', 'korta')
-      const gal = new Element('DIV', 'galas' + ' icon icon-' + e)
-      const pri = new Element('DIV', 'priekis')
-      ele.appendChild(kor)
-      kor.appendChild(gal)
+      const ele = new Elements('DIV', 'wrpko', null)
+      const kor = new Elements('DIV', 'korta', null)
+      const gal = new Elements('DIV', 'galas icon icon-' + e, null)
+      const pri = new Elements('DIV', 'priekis', null)
+      ele.appendChild(kor).appendChild(gal)
       kor.appendChild(pri)
       documentFragment.appendChild(ele)
     })
@@ -99,10 +103,15 @@
       }
     }
   })
-
+  /**
+ * ...
+ * Good; suppresses within the entire function.
+ * Also, this suppresses multiple warnings.
+ * @suppress {missingProperties|checkTypes}
+ */
   function button (text) {
     timers.classList.add('hidden')
-    const btn = new Element('button', 'btn', text)
+    const btn = new Elements('button', 'btn', text)
     btn.onclick = () => {
       start()
       message.style.display = 'none'
